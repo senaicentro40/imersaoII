@@ -18,7 +18,7 @@
 
     <body>
         <head>
-            <div class="bg-black h-[105px] text-white w-full pl-10 text-2xl gap-20 flex justify-start items-end pb-6">
+            <div class="bg-black h-[105px] text-white w-full pl-10 text-2xl gap-20 flex justify-start items-end pb-6 fixed">
                 <img src="./imgs/logo-faculdade.svg" alt="logo-faculdade">
                 <p class="text-fuchsia-600">Sobre o Evento</p>
                 <a href="./html/programacao.html">Programação</a>
@@ -28,7 +28,18 @@
         </head>
 
         <main>
-            <div class="border-2 border-blue-500 w-full h-[calc(100vh-105px)]">
+            <div class="w-full h-screen bg-black flex-col flex justify-center items-center">
+                <div class=" h-[70%] w-full flex justify-center items-center overflow-hidden">
+                    <img src="./imgs/imersao.svg" alt="logo-imersão" class="h-full w-full scale-150">
+                </div>
+                <div class=" h-[30%] w-[70%] text-white text-center flex justify-start items-start text-lg">
+                    Participe da Imersão II e descubra como o 5G está revolucionando a Indústria 4.0! Em um evento exclusivo da Faculdade SENAI no Centro 4.0, explore as tecnologias que estão transformando a indústria, impulsionando a inovação, a automação e a conectividade. 
+                </div>
+            </div>
+            <div class="border-2 border-blue-500 w-full h-screen">
+                home
+            </div>
+            <div class="border-2 border-blue-500 w-full h-screen">
                 home
             </div>
             <div class="border-2 border-blue-500 w-full h-screen">
@@ -38,31 +49,29 @@
 
         <footer class="flex flex-col md:flex-row items-center justify-between bg-black text-white p-6 px-12 space-y-6 md:space-y-0 font-semibold">
             <div>
-                <img src="/imgs/logo-senai.svg" alt="Logo SENAI" class="w-32">
+                <img src="./imgs/logo-senai.svg" alt="Logo SENAI" class="w-32">
             </div>
             <div class="flex flex-col items-center space-y-3 text-sm">
-                
                 <div class="flex items-center space-x-6">
                     <div class="flex items-center space-x-4">
                         <a href="https://www.instagram.com/senai_centro_4.0/" aria-label="Instagram" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                            <img src="/imgs/instagram-new.png" alt="Instagram" class="h-6 w-6">
+                            <img src="./imgs/instagram-new.png" alt="Instagram" class="h-6 w-6">
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=61557788934357" aria-label="Facebook" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                            <img src="/imgs/facebook-new.png" alt="Facebook" class="h-6 w-6">
+                            <img src="./imgs/facebook-new.png" alt="Facebook" class="h-6 w-6">
                         </a>
                         <a href="https://www.youtube.com/@fabrica4.0_senai_mg" aria-label="YouTube" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                            <img src="/imgs/youtube-play.png" alt="YouTube" class="h-6 w-6">
+                            <img src="./imgs/youtube-play.png" alt="YouTube" class="h-6 w-6">
                         </a>
                     </div>
                     <a href="tel:+5531999136297" class="hover:text-gray-300">(31) 99913-6297</a>
                 </div>
-                
                 <p class="text-center">
                     R. Dr. José Américo Cansado Bahia, 123 - Cidade Industrial, Contagem - MG, 32210-130
                 </p>
             </div>
             <div>
-                <img src="/imgs/logo-centro.svg" alt="Logo Centro 4.0" class="w-24">
+                <img src="./imgs/logo-centro.svg" alt="Logo Centro 4.0" class="w-24">
             </div>
         </footer>
     </body>
