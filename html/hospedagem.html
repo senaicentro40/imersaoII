@@ -17,42 +17,247 @@
     </head>
 
     <body>
-
         <header class="bg-black text-white w-full">
             <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                  <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
+                <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
                     <a href="/" class="shrink-0 self-start md:self-auto">
                       <img src="../imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
                     </a>
                     <nav class="w-full">
-                      <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
-                        <li class="md:flex-1 md:text-center">
-                          <a href="/index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Sobre o Evento</a>
-                        </li>
-                        <li class="md:flex-1 md:text-center">
-                          <a href="/html/programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
-                        </li>
-                        <li class="md:flex-1 md:text-center">
-                          <a href="/html/equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Equipe</a>
-                        </li>
-                        <li class="md:flex-1 md:text-center">
-                          <a href="/html/hospedagem.html" class="text-fuchsia-500 font-bold block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
-                        </li>
-                      </ul>
+                        <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
+                            <li class="md:flex-1 md:text-center">
+                                <a href="/index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Sobre o Evento</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="/html/programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="/html/equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Equipe</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="/html/hospedagem.html" class="text-fuchsia-500 font-bold block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
+                            </li>
+                        </ul>
                       <div class="md:hidden mt-2 border-t border-white/10"></div>
                     </nav>
-                  </div>
                 </div>
-                <div class="flex flex-col items-center justify-center bg-black p-4 py-10">
-                    <h2 class="text-fuchsia-600 font-semibold text-lg md:text-xl mb-8">Hospedagem</h2>
-                    <div class="text-white text-center md:text-left">
-                        <p class="text-sm md:text-base">Confira locais próximos para hospedagem, transporte e alimentação</p>
-                    </div>
+            </div>
+            <div class="flex flex-col items-center justify-center bg-black p-4 py-10">
+                <h2 class="text-fuchsia-600 font-semibold text-lg md:text-xl mb-8">Hospedagem</h2>
+                <div class="text-white text-center md:text-left">
+                    <p class="text-sm md:text-base">Confira locais próximos para hospedagem, transporte e alimentação</p>
                 </div>
-            </header>
+            </div>
+        </header>
 
             <main>
+                <div class="bg-sky-500 w-full my-4">
+                    <h3 class="text-black text-center font-bold text-left p-2 md:p-4 text-lg md:text-xl rounded-t-lg">Hospedagem</h3>
+                </div>
 
+                <section class="py-10">
+                    <div class="container mx-auto px-4 space-y-10">
+                  
+                      <!-- Vista Inn Express Contagem -->
+                      <div class="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-6 items-center">
+                        <div class="flex flex-col justify-center lg:w-[420px]">
+                          <h3 class="font-bold text-2xl mb-3">Vista Inn Express Contagem</h3>
+                          <p>Av. General David Sarnoff, 49 – Cidade Industrial, Contagem</p>
+                          <p>Distância: 5 a 10 min de carro</p>
+                          <div class="flex flex-wrap justify-center lg:justify-start mt-5 gap-6">
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://www.waze.com/ul?ll=-19.9481787,-44.0300952&navigate=yes" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/waze.svg" alt="Waze"> Navegar
+                            </a>
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://maps.app.goo.gl/aQQ3M2hK2gG83dEx6" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/map.svg" alt="Maps"> Ver Mapa
+                            </a>
+                          </div>
+                        </div>
+                        <div class="relative w-full h-[clamp(220px,28vh,340px)] rounded-xl overflow-hidden shadow">
+                          <iframe
+                            class="absolute inset-0 w-full h-full border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.435634508404!2d-44.03267012278794!3d-19.948173638878572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695f01e13e971%3A0x28487d1a4a898217!2sHotel%20Vista%20Contagem!5e0!3m2!1spt-BR!2sbr!4v1760026921184!5m2!1spt-BR!2sbr"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                          </iframe>
+                        </div>
+                      </div>
+                  
+                      <!-- Hotel Intercity BH Expo -->
+                      <div class="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-6 items-center">
+                        <div class="flex flex-col justify-center lg:w-[420px]">
+                          <h3 class="font-bold text-2xl mb-3">Hotel Intercity BH Expo</h3>
+                          <p>Av. Amazonas, 7702 – Gameleira, Belo Horizonte</p>
+                          <p>Distância: 20 a 30 min de carro</p>
+                          <div class="flex flex-wrap justify-center lg:justify-start mt-5 gap-6">
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://www.waze.com/ul?ll=-19.938542,-44.0008463&navigate=yes" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/waze.svg" alt="Waze"> Navegar
+                            </a>
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://maps.app.goo.gl/dyK5aEnC8FrryMdYA" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/map.svg" alt="Maps"> Ver Mapa
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="relative w-full h-[clamp(220px,28vh,340px)] rounded-xl overflow-hidden shadow">
+                          <iframe
+                            class="absolute inset-0 w-full h-full border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.664405934219!2d-44.00342122286895!3d-19.938541981451838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6965d4eebfe87%3A0x4b821b9c35326d55!2sHotel%20Intercity%20BH%20Expo!5e0!3m2!1spt-BR!2sbr!4v1760028142079!5m2!1spt-BR!2sbr"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                          </iframe>
+                        </div>
+                      </div>
+                  
+                      <!-- Hotel Eldorado Flat -->
+                      <div class="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-6 items-center">
+                        <div class="flex flex-col justify-center lg:w-[420px]">
+                          <h3 class="font-bold text-2xl mb-3">Hotel Eldorado Flat</h3>
+                          <p>Av. João César de Oliveira, 700 – Eldorado, Contagem</p>
+                          <p>Distância: 10 a 15 min de carro</p>
+                          <div class="flex flex-wrap justify-center lg:justify-start mt-5 gap-6">
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://www.waze.com/ul?ll=-19.9432462,-44.0347558&navigate=yes" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/waze.svg" alt="Waze"> Navegar
+                            </a>
+                            <a class="inline-flex items-center gap-2 font-bold hover:opacity-90" href="https://maps.app.goo.gl/H4qohg4zpyKKWCAz9" target="_blank" rel="noopener">
+                              <img class="w-8 h-8" src="/imgs/map.svg" alt="Maps"> Ver Mapa
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="relative w-full h-[clamp(220px,28vh,340px)] rounded-xl overflow-hidden shadow">
+                          <iframe
+                            class="absolute inset-0 w-full h-full border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3750.664526601047!2d-44.0034212!3d-19.9385369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695a9f45ec159%3A0xf9e5783cd9582d9f!2sHotel%20Eldorado%20Flat!5e0!3m2!1spt-BR!2sbr!4v1760034072083!5m2!1spt-BR!2sbr"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                          </iframe>
+                        </div>
+                      </div>
+                  
+                    </div>
+                </section>
+                  
+                <div class="bg-sky-500 w-full my-4">
+                    <h3 class="text-black text-center font-bold text-left p-2 md:p-4 text-lg md:text-xl rounded-t-lg">Transporte</h3>
+                </div>
+
+                <section class="py-10">
+                    <div class="container mx-auto px-4">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <div class="bg-blue-500 text-white rounded-[30px] flex flex-col items-center text-center shadow-md pb-4">
+                            <img class="w-full" src="/imgs/taxi.svg" alt="Táxi">
+                            <h3 class="font-bold mt-5 mb-10 text-xl sm:text-2xl">Cooperfins</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Telefone: <a class="underline" href="tel:+553136892113">(31) 3689-2113</a></li>
+                                <li>45 a 60 min até o SENAI 4.0</li>
+                                <li>Custo médio: R$ 160 – R$ 180</li>
+                                <li><a class="underline hover:opacity-90 rounded" href="https://www.cooperfins.com.br/" target="_blank" rel="noopener">Link: Cooperfins</a></li>
+                            </ul>
+                        </div>
+                  
+                        <div class="bg-blue-500 text-white rounded-[30px] flex flex-col items-center text-center shadow-md pb-4">
+                            <img class="w-full" src="/imgs/uber.svg" alt="Uber">
+                            <h3 class="font-bold mt-5 mb-10 text-xl sm:text-2xl">Uber</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>45 a 60 min até o SENAI 4.0</li>
+                                <li>Custo médio: R$ 160 – R$ 180</li>
+                                <li><a class="underline hover:opacity-90 rounded" href="https://www.uber.com/br/pt-br/" target="_blank" rel="noopener">Link: Uber</a></li>
+                            </ul>
+                        </div>
+                  
+                        <div class="bg-blue-500 text-white rounded-[30px] flex flex-col items-center text-center shadow-md pb-4">
+                            <img class="w-full" src="/imgs/onibus.svg" alt="Ônibus">
+                            <h3 class="font-bold mt-5 mb-10 text-xl sm:text-2xl">Conexão Aeroporto</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Telefone: <a class="underline" href="tel:+553136892113">(31) 3689-2113</a></li>
+                                <li>45 a 60 min até o SENAI 4.0</li>
+                                <li>Custo médio: R$ 160 – R$ 180</li>
+                                <li><a class="underline hover:opacity-90 rounded" href="https://conexaoaeroporto.com.br/" target="_blank" rel="noopener">Link: Conexão Aeroporto</a></li>
+                            </ul>
+                        </div>
+                  
+                      </div>
+                    </div>
+                </section>
+                  
+                <div class="bg-sky-500 w-full my-4">
+                    <h3 class="text-black text-center font-bold text-left p-2 md:p-4 text-lg md:text-xl rounded-t-lg">Alimentação</h3>
+                </div>
+
+                <section>
+                    <div class="mx-4 md:mx-20 my-6">
+                        <div class="bg-blue-600 text-white rounded-2xl overflow-hidden flex items-stretch">
+                            <div class="w-64 md:w-80">
+                                <img src="/imgs/marcas.svg"alt="Só Marcas Outlet"class="w-full h-full object-cover"/>
+                            </div>
+                        
+                            <div class="flex-1 p-6  flex flex-col justify-center text-left">
+                                <h2 class="font-bold mb-3 text-2xl mb-4">Só Marcas Outlet</h2>
+                                <p>
+                                    <span class="font-semibold">Localização:</span> Av. Cardeal Eugênio Pacelli, 1336 – Cidade Industrial, Contagem – MG
+                                </p>
+                        
+                                <p>
+                                    <span class="font-semibold">Custo:</span> $$ - $$$
+                                </p>
+                        
+                                <div class="mt-5">
+                                    <a href="#" class="inline-flex items-center gap-2 px-4 py-2 font-semibold rounded-full bg-white text-black hover:bg-blue-50 transition ring-1 ring-black/5">
+                                        <img src="/imgs/waze.svg" alt="Waze" class="w-5 h-5"> IR!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-4 md:mx-20 my-6">
+                        <div class="bg-blue-600 text-white rounded-2xl overflow-hidden flex items-stretch">
+                            <div class="w-64 md:w-80">
+                                <img src="/imgs/aviao.svg"alt="Só Marcas Outlet"class="w-full h-full object-cover"/>
+                            </div>
+                        
+                            <div class="flex-1 p-6  flex flex-col justify-center text-left">
+                                <h2 class="font-bold mb-3 text-2xl mb-4">Shopping do Avião</h2>
+                                <p>
+                                    <span class="font-semibold">Localização:</span> Av. Babita Camargos, 1295 - Cidade Industrial, Contagem - MG. 
+                                </p>
+                        
+                                <p>
+                                    <span class="font-semibold">Custo:</span> $ - $$
+                                </p>
+                        
+                                <div class="mt-5">
+                                    <a href="#" class="inline-flex items-center gap-2 px-4 py-2 font-semibold rounded-full bg-white text-black hover:bg-blue-50 transition ring-1 ring-black/5">
+                                        <img src="/imgs/waze.svg" alt="Waze" class="w-5 h-5"> IR!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-4 md:mx-20 my-6">
+                        <div class="bg-blue-600 text-white rounded-2xl overflow-hidden flex items-stretch">
+                            <div class="w-64 md:w-80">
+                                <img src="/imgs/itau.svg"alt="Só Marcas Outlet"class="w-full h-full object-cover"/>
+                            </div>
+                        
+                            <div class="flex-1 p-6  flex flex-col justify-center text-left">
+                                <h2 class="font-bold mb-3 text-2xl mb-4">Itaú Power Shopping</h2>
+                                <p>
+                                    <span class="font-semibold">Localização:</span>
+                                    Av. General David Sarnoff, 5160 - Cidade Industrial, Contagem - MG
+                                </p>
+                        
+                                <p>
+                                    <span class="font-semibold">Custo:</span> $$ - $$
+                                </p>
+                        
+                                <div class="mt-5">
+                                    <a href="#" class="inline-flex items-center gap-2 px-4 py-2 font-semibold rounded-full bg-white text-black hover:bg-blue-50 transition ring-1 ring-black/5">
+                                        <img src="/imgs/waze.svg" alt="Waze" class="w-5 h-5"> IR!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
 
         <footer class="flex flex-col md:flex-row items-center justify-between bg-black text-white p-6 px-12 space-y-6 md:space-y-0 font-semibold">
