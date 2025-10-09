@@ -17,15 +17,32 @@
     </head>
 
     <body>
-        <head>
-            <div class="bg-black h-[105px] text-white w-full pl-10 text-2xl gap-20 flex justify-start items-end pb-6 fixed">
-                <img src="../imgs/logo-faculdade.svg" alt="logo-faculdade">
-                <a href="../index.html">Sobre o Evento</a>
-                <a href="./programacao.html">Programação</a>
-                <p class="text-fuchsia-600">Equipe</p>
-                <a href="./hospedagem.html">Hospedagem e Transporte</a>
-            </div>
-        </head>
+        <header class="bg-black text-white w-full">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
+                  <a href="/" class="shrink-0 self-start md:self-auto">
+                    <img src="../imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
+                  </a>
+                  <nav class="w-full">
+                    <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
+                      <li class="md:flex-1 md:text-center">
+                        <a href="/index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Sobre o Evento</a>
+                      </li>
+                      <li class="md:flex-1 md:text-center">
+                        <a href="/html/programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
+                      </li>
+                      <li class="md:flex-1 md:text-center">
+                        <a href="/html/equipe.html" class="text-fuchsia-500 font-bold block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Equipe</a>
+                      </li>
+                      <li class="md:flex-1 md:text-center">
+                        <a href="/html/hospedagem.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
+                      </li>
+                    </ul>
+                    <div class="md:hidden mt-2 border-t border-white/10"></div>
+                  </nav>
+                </div>
+              </div>
+        </header>
 
         <main>
 
