@@ -1,80 +1,178 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Imersão II</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&a… rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Inter', sans-serif;
-            }
-        </style>
-    </head>
 
-    <body>
-      <header class="bg-black text-white w-full">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 p-5">
-          <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
-            <a href="../../index.html" class="shrink-0 self-start md:self-auto">
-              <img src="../imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
-            </a>
-            <nav class="w-full">
-              <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
-                <li class="md:flex-1 md:text-center">
-                  <a href="../../index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Sobre o Evento</a>
-                </li>
-                <li class="md:flex-1 md:text-center">
-                  <a href="./programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
-                </li>
-                <li class="md:flex-1 md:text-center">
-                  <a href="./equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded text-fuchsia-500 font-bold">Equipe</a>
-                </li>
-                <li class="md:flex-1 md:text-center">
-                  <a href="./hospedagem.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
-                </li>
-              </ul>
-              <div class="md:hidden mt-2 border-t border-white/10"></div>
-            </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão II</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&a… rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-black text-white w-full">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 p-5">
+        <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
+          <a href="../../index.html" class="shrink-0 self-start md:self-auto">
+            <img src="../imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
+          </a>
+          <nav class="w-full">
+            <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
+              <li class="md:flex-1 md:text-center">
+                <a href="../../index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Sobre o Evento</a>
+              </li>
+              <li class="md:flex-1 md:text-center">
+                <a href="./programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
+              </li>
+              <li class="md:flex-1 md:text-center">
+                <a href="./equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded text-fuchsia-500 font-bold">Equipe</a>
+              </li>
+              <li class="md:flex-1 md:text-center">
+                <a href="./hospedagem.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
+              </li>
+            </ul>
+            <div class="md:hidden mt-2 border-t border-white/10"></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-col items-center justify-center bg-black p-4 py-10">
+      <h2 class="text-fuchsia-600 font-semibold text-lg md:text-xl mb-8">Equipe</h2>
+      <div class="text-white text-center md:text-left">
+        <p class="text-sm md:text-base">Conheça nossos palestrantes, Professores e Equipe Técnica </p>
+      </div>
+    </div>  
+
+    <main class="w-full h-auto">
+      <div class="h-auto flex flex-col justify-start items-center gap-20">
+        <div class="w-full h-auto flex flex-col justify-start items-center mt-10">
+          <p class="bg-fuchsia-600 p-2 text-2xl font-bold w-[50%] rounded-2xl flex justify-center">Professores</p>
+          <div class="w-full h-auto flex justify-center items-start md:gap-5 gap-2 flex-wrap mt-10">
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
           </div>
         </div>
-      </header>
-      
 
-        <main>
-
-        </main>
-
-      <footer class="flex flex-col md:flex-row items-center justify-between bg-black text-white p-6 px-12 space-y-6 md:space-y-0 font-semibold">
-          <div>
-              <img src="/public/imgs/logo-senai.svg" alt="Logo SENAI" class="w-32">
-          </div>
-          <div class="flex flex-col items-center space-y-3 text-sm">
-              <div class="flex items-center space-x-6">
-                  <div class="flex items-center space-x-4">
-                      <a href="https://www.instagram.com/senai_centro_4.0/" aria-label="Instagram" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                          <img src="/public/imgs/instagram-new.png" alt="Instagram" class="h-6 w-6">
-                      </a>
-                      <a href="https://www.facebook.com/profile.php?id=61557788934357" aria-label="Facebook" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                          <img src="/public/imgs/facebook-new.png" alt="Facebook" class="h-6 w-6">
-                      </a>
-                      <a href="https://www.youtube.com/@fabrica4.0_senai_mg" aria-label="YouTube" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                          <img src="/public/imgs/youtube-play.png" alt="YouTube" class="h-6 w-6">
-                      </a>
-                  </div>
-                  <a href="tel:+5531999136297" class="hover:text-gray-300">(31) 99913-6297</a>
+        <div class="w-full h-auto flex flex-col justify-start items-center">
+          <p class="bg-fuchsia-600 p-2 text-2xl font-bold w-[50%] rounded-2xl flex justify-center">Palestrantes</p>
+          <div class="w-full h-auto flex justify-center items-start md:gap-5 gap-2 flex-wrap mt-10">
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
               </div>
-              <p class="text-center">
-                  R. Dr. José Américo Cansado Bahia, 123 - Cidade Industrial, Contagem - MG, 32210-130
-              </p>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
           </div>
-          <div>
-              <img src="/public/imgs/logo-centro.svg" alt="Logo Centro 4.0" class="w-24">
+        </div>
+
+        <div class="w-full h-auto flex flex-col justify-start items-center mb-10">
+          <p class="bg-fuchsia-600 p-2 text-2xl font-bold w-[50%] rounded-2xl flex justify-center mb-10">Equipe</p>
+          <div class="w-full h-auto flex justify-center items-start md:gap-5 gap-2 flex-wrap mt-15">
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
+            <div class="flex flex-col justify-start items-center">
+              <div class="h-[200px] w-[200px] bg-zinc-300 rounded-full flex justify-center items-center">
+                Imagem
+              </div>
+              <p>Nome</p>
+            </div>
           </div>
-      </footer>
-    </body>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex flex-col md:flex-row items-center justify-between bg-black text-white p-6 px-12 space-y-6 md:space-y-0 font-semibold">
+      <div>
+        <img src="../imgs/logo-senai.svg" alt="Logo SENAI" class="w-32">
+      </div>
+      <div class="flex flex-col items-center space-y-3 text-sm">
+        <div class="flex items-center space-x-6">
+          <div class="flex items-center space-x-4">
+            <a href="https://www.instagram.com/senai_centro_4.0/" aria-label="Instagram" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
+              <img src="../imgs/instagram-new.png" alt="Instagram" class="h-6 w-6">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61557788934357" aria-label="Facebook" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
+              <img src="../imgs/facebook-new.png" alt="Facebook" class="h-6 w-6">
+            </a>
+            <a href="https://www.youtube.com/@fabrica4.0_senai_mg" aria-label="YouTube" class="transform transition-all duration-300 hover:scale-110 hover:shadow-lg">
+              <img src="../imgs/youtube-play.png" alt="YouTube" class="h-6 w-6">
+            </a>
+          </div>
+          <a href="tel:+5531999136297" class="hover:text-gray-300">(31) 99913-6297</a>
+        </div>
+        <p class="text-center">
+          R. Dr. José Américo Cansado Bahia, 123 - Cidade Industrial, Contagem - MG, 32210-130
+        </p>
+      </div>
+      <div>
+        <img src="../imgs/logo-centro.svg" alt="Logo Centro 4.0" class="w-24">
+      </div>
+    </footer>
+  </body>
+
 </html>
