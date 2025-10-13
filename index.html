@@ -22,30 +22,30 @@
     </head>
 
     <body>
-        <header class="bg-black text-white w-full">
+        <header class="bg-black text-white w-full md:fixed md:z-50">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 p-5">
-              <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
-                <a href="index.html" class="shrink-0 self-start md:self-auto">
-                  <img src="public/imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
-                </a>
-                <nav class="w-full">
-                  <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
-                    <li class="md:flex-1 md:text-center">
-                      <a href="index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded text-fuchsia-500 font-bold">Sobre o Evento</a>
-                    </li>
-                    <li class="md:flex-1 md:text-center">
-                      <a href="public/pages/programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
-                    </li>
-                    <li class="md:flex-1 md:text-center">
-                      <a href="public/pages/equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Equipe</a>
-                    </li>
-                    <li class="md:flex-1 md:text-center">
-                      <a href="public/pages/hospedagem.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
-                    </li>
-                  </ul>
-                  <div class="md:hidden mt-2 border-t border-white/10"></div>
-                </nav>
-              </div>
+                <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-6 py-4">
+                    <a href="index.html" class="shrink-0 self-start md:self-auto">
+                        <img src="public/imgs/logo-faculdade.svg" alt="Logo da Faculdade" class="h-10 md:h-12">
+                    </a>
+                    <nav class="w-full">
+                        <ul class="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-8 text-base md:text-lg">
+                            <li class="md:flex-1 md:text-center">
+                                <a href="index.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded text-fuchsia-500 font-bold">Sobre o Evento</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="public/pages/programacao.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Programação</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="public/pages/equipe.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Equipe</a>
+                            </li>
+                            <li class="md:flex-1 md:text-center">
+                                <a href="public/pages/hospedagem.html" class="block px-2 py-2 hover:opacity-80 focus:outline-none rounded">Hospedagem e Transporte</a>
+                            </li>
+                        </ul>
+                        <div class="md:hidden mt-2 border-t border-white/10"></div>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -93,14 +93,19 @@
                         Cursos superiores em Engenharia e Tecnologia que conectam você ao futuro.
                     </div>
                     <div class="w-full md:h-[calc(100vh-150px)] h-[calc(100vh-400px)] flex justify-start items-center flex-col gap-[30px] pt-[50px]">
-                        <div class="w-[90%] h-[70%] bg-white">
-                            Imagem
+                        <div id="viewport" class="w-[90%] h-[70%] bg-white overflow-hidden">
+                            <div id="slides" class="flex transition-transform duration-500 ease-out w-full h-full">
+                                <img src="./public/imgs/centro40.png" class="w-full h-full flex-shrink-0 object-cover">
+                                <img src="./public/imgs/imersao.svg" class="w-full h-full flex-shrink-0 object-cover">
+                                <img src="./public/imgs/marcas.svg" class="w-full h-full flex-shrink-0 object-cover">
+                                <img src="./public/imgs/taxi.svg" class="w-full h-full flex-shrink-0 object-cover">
+                            </div>
                         </div>
                         <div class="w-[90%] flex items-center justify-center gap-3">
-                            <div class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></div>
-                            <div class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></div>
-                            <div class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></div>
-                            <div class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></div>
+                            <button id="botao1" data-dot="0" class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></button>
+                            <button id="botao2" data-dot="1" class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></button>
+                            <button id="botao3" data-dot="2" class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></button>
+                            <button id="botao4" data-dot="3" class="w-[20px] h-[20px] bg-white rounded-full hover:bg-cyan-400 cursor-pointer transition-colors"></button>
                         </div>
                     </div>
                 </div>
@@ -109,9 +114,10 @@
             <div class="w-full md:h-screen h-auto md:pt-[105px] flex flex-col justify-center items-center bg-cyan-400">
                 <p class="text-white font-semibold flex justify-center items-end h-[100px] md:text-xl text-3xl text-center">Centro 4.0</p>
                 <div class="flex h-auto md:flex-nowrap flex-wrap">
-                    <div class="w-full md:h-[calc(100vh-150px)] h-[calc(100vh-400px)] flex justify-center items-center flex-col gap-[30px] pt-[50px]">
+                    <div class="w-full md:h-[calc(100vh-150px)] h-[calc(100vh-400px)] flex justify-start items-center flex-col md:gap-[5px] gap-[30px] pt-[50px]">
+                        <a class="text-white cursor-pointer underline font-bold" href="https://my.matterport.com/show/?m=7ySZ9NBC4ej" target="_blank">Clique aqui e faça um tour pelo centro 4.0</a>
                         <div class="w-[90%] h-[70%] bg-white">
-                            Imagem
+                            <img src="./public/imgs/centro40.png" alt="tour 360 centro 4.0" class="cursor-pointer w-full h-full">
                         </div>
                     </div>
                     <div class="w-full md:h-[calc(100vh-150px)] h-auto md:mb-0 mb-10 felx justify-center items-center flex gap-[30px] p-[30px] text-center text-lg text-white">
@@ -151,4 +157,46 @@
             </div>
         </footer>
     </body>
+
+    <script>
+        const slides = document.querySelector('#slides');
+        const images = slides.querySelectorAll('img');
+        const total  = images.length;
+      
+        images.forEach(img => { img.style.flex = '0 0 100%'; });
+      
+        const dots = Array.from(document.querySelectorAll('[data-dot]'));
+        function updateDots() {
+          dots.forEach((b, i) => {
+            b.classList.toggle('bg-cyan-500', i === index); 
+            b.classList.toggle('bg-white', i !== index); 
+            b.setAttribute('aria-current', i === index ? 'true' : 'false');
+          });
+        }
+      
+        let index = 0;
+      
+        function mostrarSlide() {
+          slides.style.transform = `translateX(-${index * 100}%)`;
+          updateDots();
+        }
+      
+        let timer = setInterval(next, 3000);
+        function next() {
+          index = (index + 1) % total;
+          mostrarSlide();
+        }
+      
+        dots.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const i = Number(btn.dataset.dot);
+            index = i;
+            mostrarSlide();
+            clearInterval(timer);
+            timer = setInterval(next, 3000);
+          });
+        });
+      
+        mostrarSlide();
+      </script>      
 </html>
